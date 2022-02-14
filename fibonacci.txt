@@ -1,0 +1,33 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	     inteiro a = 0, b = 1, c = 0, n, contador = 2
+	     
+	     faca{
+		     escreva("Qual número deseja calcular? ")
+		     leia(n)
+	     }enquanto(n < 1)
+
+	     se(n == 1){
+		     escreva("0\n")
+	}
+	senao{
+		se(n == 2){
+			escreva("1/n")
+		}
+		senao{
+			enquanto(contador < n){
+				c = a + b
+				a = b
+				b = c
+				contador++
+				escreva(c, ",")
+			
+			}
+			escreva("\n0 ", n, "º termo é: ", c, "\n")
+		     }
+	      }    	
+       }
+ }
